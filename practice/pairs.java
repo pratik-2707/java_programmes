@@ -1,20 +1,22 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
 // we can make this class as static class also inside pairs class
 
-class Pair<A, B> {
-    A first;
-    B second;
-
-    // Constructor
-    public Pair(A first, B second)
-    {
-        this.first = first;
-        this.second = second;
+class pair  {
+    int first ;
+    int second ;
+    
+    public pair (int f,int s) {
+        this.first = f;
+        this.second = s;
     }
 }
+
+
 
 public class pairs {
 
@@ -59,24 +61,42 @@ public class pairs {
         return s;
     }
 
+    static class Sorting implements Comparator<pair>{
+        @Override
+        public int compare(pair o1, pair o2) {
+            // TODO Auto-generated method stub
+            if(o2.second==o1.second){
+                return o2.first-o1.first;
+            }
+            return o2.second - o1.second;
+        }
+    }
+    
     public static  void main(String[] args) {
 
-        List <Pair<Integer,Integer>> a = new ArrayList<Pair<Integer,Integer>>() ;
-        Pair<Integer,Integer> z  = new Pair<Integer,Integer>(1, 2) ;
-        a.add(z) ;
-        for(Pair<Integer,Integer> it : a) {
-            System.out.println(it.first);
+        List <pair> arr = new ArrayList<pair>() ;
+        pair z  = new pair(1, 2) ;
+        arr.add(z) ;
+        for(pair it : arr) {
+            System.out.println(it.first + " " + it.second);
+        }
+
+        Collections.sort(arr,new Sorting()) ;
+        for(pair it : arr) {
+            System.out.println(it.first + " " + it.second);
         }
     }
 }
 
 
-// class pair<a,b> {
-//     a first ;
-//     b second ;
-    
-//     public pair (a f,b s) {
-//         this.first = f;
-//         this.second = s;
+// class Pair<A, B> {
+//     A first;
+//     B second;
+
+//     // Constructor
+//     public Pair(A first, B second)
+//     {
+//         this.first = first;
+//         this.second = second;
 //     }
 // }
