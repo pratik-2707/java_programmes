@@ -85,6 +85,8 @@ public class pairs {
         for(pair it : arr) {
             System.out.println(it.first + " " + it.second);
         }
+
+        
     }
 }
 
