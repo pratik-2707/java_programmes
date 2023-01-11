@@ -3,7 +3,7 @@ public class bit_manipulation {
     static void print_binary(int n) {
         int i , j ;
         for(i=0;i<32;i++) {
-            System.out.print((n>>i)&1) ;
+            System.out.print(((n>>i)&1)) ;
         }
     }
 
@@ -11,7 +11,7 @@ public class bit_manipulation {
         int i , j , mask ;
         mask = 1<<posn ;
         
-        if((mask&n) >0) {
+        if((mask&n) !=0) {
             return true ;
         }
         else {
@@ -34,12 +34,11 @@ public class bit_manipulation {
 
     public static void main(String[] args) {
     
-
-        int n = 1175 , i,j;
+        int n = -2 , i,j;
+        System.out.println(n);
         print_binary(n) ;
-        System.out.println(set_bit_check(5, 2));
+        System.out.println(set_bit_check(n, 31));
         
-        System.out.println(bit_change(5, 0));
-
+        System.out.println(bit_change(n, 31));
     }
 }
