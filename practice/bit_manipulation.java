@@ -34,7 +34,7 @@ public class bit_manipulation {
 
     public static void main(String[] args) {
     
-        int n = -2 , i,j;
+        int n = -2147483647 , i,j;
         System.out.println(n);
         print_binary(n) ;
         System.out.println(set_bit_check(n, 31));
