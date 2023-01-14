@@ -40,5 +40,9 @@ public class bit_manipulation {
         System.out.println(set_bit_check(n, 31));
         
         System.out.println(bit_change(n, 31));
+        
+
+        System.out.println(Integer.bitCount(6)) ;
+        System.out.println(Integer.highestOneBit(1));
     }
 }
