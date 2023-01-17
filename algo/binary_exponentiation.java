@@ -1,4 +1,5 @@
 public class binary_exponentiation {
+// we can use modulo for greater calculation
 
     static int func(int a , int b) {
         int ans = 1;
