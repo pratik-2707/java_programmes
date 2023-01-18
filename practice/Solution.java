@@ -1,3 +1,4 @@
+import java.util.Collection;
 import java.util.PriorityQueue;
 
 class Solution {
@@ -6,7 +7,12 @@ class Solution {
 
         int i , j ;
 
-        System.out.println(s);
+        String s= "23" ;
+        System.out.println(String.valueOf(s));
+        String p = Character.toString('a') ;
+        System.out.println(p);
+
+        
     }
 }
 
