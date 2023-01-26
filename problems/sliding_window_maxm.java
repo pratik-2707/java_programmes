@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.TreeSet;
+
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length , i = 0 , j = 0  , it , l = 0 , r = i+k-1 , comp=0,prev=0;

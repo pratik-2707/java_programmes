@@ -43,7 +43,7 @@ public class bfs {
         int edges = sc.nextInt() ;
         for(int i=0;i<edges;i++) {
             int v1 , v2 ;
-            v1 = sc.nextInt();
+            v1 = sc.nextInt() ;
             v2 = sc.nextInt() ;
             g.get(v1).add(v2) ;
             g.get(v2).add(v1) ;

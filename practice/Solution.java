@@ -1,19 +1,16 @@
-import java.util.Collection;
-import java.util.PriorityQueue;
+import java.util.* ;
+
 
 class Solution {
 
+    static void func(int[] a) {
+        a[0] = 2;
+        a[1] = 2;
+    }
     public static void main(String[] args)  {
+        int[] a = {1,2} ;
 
-        int i , j ;
-
-        String s= "23" ;
-        System.out.println(String.valueOf(s));
-        String p = Character.toString('a') ;
-        System.out.println(p);
-
-        
+        func(a) ;
+        System.out.println(a[0]);
     }
 }
-
-
