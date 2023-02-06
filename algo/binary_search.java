@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class binary_search {
 
@@ -72,13 +72,71 @@ public class binary_search {
         }
     }
 
+    static int first_occurence(int[] a,int t) {
+        if(!func(a,t)) {
+            return -1;
+        }
+        int i ,  j , l , r , mid =0, sz= a.length;
+        l = 0 ;
+        r = sz-1 ;
+        while(l<=r) {
+            mid = (l+r)/ 2;
+            if(a[mid]==t) {
+                r = mid -1 ;
+            }
+            else if(a[mid]<t){
+                l = mid +1 ;
+            }
+            else {
+                r = mid - 1 ;
+            }
+        }    
+        if(a[mid]!=t) {
+            return mid+1;
+        }
+        else {
+            return mid ;
+        }
+    }
+
+    static int last_occurence(int[] a,int t) {
+        if(!func(a,t)) {
+            return -1;
+        }
+        int i ,  j , l , r , mid =0, sz= a.length;
+        l = 0 ;
+        r = sz-1 ;
+        while(l<=r) {
+            mid = (l+r)/ 2;
+            if(a[mid]==t) {
+                l = mid + 1 ;
+            }
+            else if(a[mid]<t){
+                l = mid +1 ;
+            }
+            else {
+                r = mid - 1 ;
+            }
+        }    
+        if(a[mid]!=t) {
+            return mid-1;
+        }
+        else {
+            return mid ;
+        }
+    }
+
+
     public static void main(String[] args) {
         int[] a = {1,3,4,5,7,7,7,4,6,4,16} ;
-        System.out.println(func(a,8));
+        Arrays.sort(a) ;
+        // System.out.println(func(a,8));
         
 
-        System.out.println(closest_num(a, 3));
-        System.out.println(closest_num(a, 11));
-        System.out.println(closest_num(a, 5));
+        // System.out.println(closest_num(a, 3));
+        // System.out.println(closest_num(a, 11));
+        // System.out.println(closest_num(a, 5));
+
+        System.out.println(first_occurence(a, 7));
     }
 }

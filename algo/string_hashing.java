@@ -14,6 +14,6 @@ public class string_hashing {
 
 
     public static void main(String[] args) {
-        System.out.println(compute_hash("pratik"));
+        System.out.println(compute_hash("pratikjgrogjoprghrghrpghprhopghorhgophreg"));
     }
 }
