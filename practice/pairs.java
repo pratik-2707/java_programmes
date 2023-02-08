@@ -10,6 +10,7 @@ class pair  {
     int first ;
     int second ;
     
+    public pair() {}
     public pair (int f,int s) {
         this.first = f;
         this.second = s;
