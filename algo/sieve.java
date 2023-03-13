@@ -20,11 +20,14 @@ public class sieve {
     }
 
     public static void main(String[] args) {
-        int i,j,n=100;
+        int i,j,n=1000000 , ct=0;
         boolean[] isprime = func(n) ;
         for(i=0;i<n;i++) {
-            System.out.println(i+" "+isprime[i]);
+            // System.out.println(i+" "+isprime[i]);
+            if(isprime[i]) {
+                ct++;
+            }
         }
-
+        System.out.println(ct);
     }
 }

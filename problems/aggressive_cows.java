@@ -2,6 +2,7 @@ import java.util.*;
 import java.lang.*;
 
 
+
 public class aggressive_cows {
     
 	public static void main (String[] args) throws java.lang.Exception
