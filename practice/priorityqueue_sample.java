@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.PriorityQueue;
 
 // The internal structure of the PriorityQueue is not ordered, it is a heap, you can check this question.
@@ -53,6 +55,24 @@ public class priorityqueue_sample {
         pq2.add(4) ;
         pq2.poll() ;
 
+
+        // list of priority queue
+
+        List<PriorityQueue<Integer>> lp = new ArrayList<>() ;
+
+        for(int i=1;i<=5;i++) {
+            lp.add(new PriorityQueue<>((a,b) -> b - a)) ;
+        }
+
+        lp.get(0).add(3);
+        lp.get(0).add(5) ;
+        lp.get(0).add(1) ;
+        lp.get(0).add(7) ;
+        lp.get(0).add(9) ;
+
+        for(Integer jj:lp.get(0)) {
+            System.out.println(jj);
+        }
     }
 
 }
