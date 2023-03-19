@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class a {
+public class merge_sort_example {
 
     static int func(int[] a,int l, int r) {
         int ct = 0;

@@ -65,11 +65,25 @@ public class trie {
         Node curr = root;
         for(int i=0;i<26;i++) {
             if(curr.children[i]!=null) {
-                System.out.print((char)(i+'a') + " " );
+                // System.out.print((char)(i+'a') + " " );
                 print_trie(curr.children[i]) ;
             }
         }
-        System.out.println();
+    }
+
+    public static boolean startsWith(String prefix) {
+        int i , j , n = prefix.length() ;
+        Node curr = root;
+        for(i=0;i<n;i++) {
+            int c = prefix.charAt(i)-'a';
+            if(curr.children[c]==null) {
+                return false;
+            } 
+            else {
+                curr = curr.children[c] ; 
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) {
@@ -80,5 +94,7 @@ public class trie {
             System.out.println(search(jj));
         }
         print_trie(root) ;
+
+        System.out.println(startsWith("gan"));
     }
 }
