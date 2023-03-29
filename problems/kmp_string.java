@@ -1,31 +1,9 @@
 //KMP ALGORITHM
+
+// https://www.youtube.com/watch?v=GTJr8OvyEVQ
+
 // Gives Index of the First Occurrence of pattern in a text
 public class kmp_string {
-
-    // alternate function using while loop
-    
-    // static int[] pref_func(String s) {
-    //     int i=1;int j=0;
-    //     int n = s.length()   ;
-
-    //     int[] p = new int[n] ;
-    //     while(i<n) {
-    //         if(s.charAt(i)==s.charAt(j)) {
-    //             j++;
-    //             p[i] = j;
-    //             i++;
-    //         }
-    //         else {
-    //             if(j==0) {
-    //                 p[i] = 0;
-    //                 i++;
-    //             }
-    //             else {
-    //                 j = p[j-1] ;
-    //             }
-    //         }
-    //     }
-    // }
 
     static int[] pref_func(String s) {  // O(n)
 
@@ -48,8 +26,8 @@ public class kmp_string {
     static int kmp_func(String s,String sub) {
         int n = s.length() , m = sub.length() , i , j , index=-1;
         int[] rs = pref_func(sub) ; // getting lps array
-        i=0;
-        j=0;
+        i=0; // for s 
+        j=0; // for sub
         while(i<n) {
             if(s.charAt(i)==sub.charAt(j)) {
                 i++;

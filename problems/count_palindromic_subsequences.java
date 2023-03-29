@@ -3,6 +3,8 @@ import java.util.*;
 
 // https://leetcode.com/problems/count-palindromic-subsequences/description/
 
+// Counting palindromic subsequences of length 5 only
+
 
 public class count_palindromic_subsequences {
 
