@@ -15,7 +15,9 @@ using namespace std ;
                 if(i!=0) {
                     s[i-1] = (s[i-1]) + 1 ;
                 }
-                else {
+                else {  // this is edge case 
+                    // example target is 1 and n is 19 
+                    // then we have to add 1 in beginnig  to make it 100
                     s = '1' + s ;
                 }
                 return s;

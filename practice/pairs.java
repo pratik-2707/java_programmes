@@ -82,7 +82,9 @@ public class pairs {
             System.out.println(it.first + " " + it.second);
         }
 
-        Collections.sort(arr,new Sorting()) ;
+        // Collections.sort(arr,new Sorting()) ;
+        // or we can also write 
+        Collections.sort(arr,(p1,p2)->(p1.second==p2.second?p2.first-p1.first:p2.second-p1.second)) ;
         for(pair it : arr) {
             System.out.println(it.first + " " + it.second);
         }
