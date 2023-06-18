@@ -8,15 +8,7 @@ public class bit_manipulation {
     }
 
     static boolean set_bit_check(int n,int posn) {  // posn will be 0 index
-        int i , j , mask ;
-        mask = 1<<posn ;
-        
-        if((mask&n) !=0) {
-            return true ;
-        }
-        else {
-            return false;
-        }
+        return (((1<<posn)&n)!=0) ? true : false;
     }
 
     static int bit_change(int n , int posn) {
@@ -35,14 +27,17 @@ public class bit_manipulation {
     public static void main(String[] args) {
     
         int n = -2147483648 , i,j;
-        System.out.println(n);
-        print_binary(n) ;
-        System.out.println(set_bit_check(n, 31));
+        // System.out.println(n);
+        // print_binary(n) ;
+        // System.out.println(set_bit_check(n, 31));
         
-        System.out.println(bit_change(n, 31));
+        // System.out.println(bit_change(n, 31));
         
 
-        System.out.println(Integer.bitCount(6)) ;
-        System.out.println(Integer.highestOneBit(1));
+        // System.out.println(Integer.bitCount(6)) ;
+        // System.out.println(Integer.highestOneBit(1));
+
+        // System.out.println(set_bit_check(4,1 ));
+
     }
 }

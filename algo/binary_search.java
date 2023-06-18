@@ -167,5 +167,6 @@ public class binary_search {
         // System.out.println(first_occurence(a, 7));
 
         // System.out.println(lower_bound(a, 8));
+        System.out.println(upper_bound(a, 8));
     }
 }

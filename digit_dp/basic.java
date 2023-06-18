@@ -2,8 +2,12 @@ package digit_dp;
 
 import java.util.* ;
 
+// https://leetcode.com/list/relyabt5/ digit dp problems
+
+// https://leetcode.com/problems/count-of-integers/description/?envType=list&envId=relyabt5
+
 /**
- * basic
+ * basic 
  */
 public class basic {
 
