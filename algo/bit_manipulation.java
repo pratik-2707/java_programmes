@@ -10,7 +10,6 @@ public class bit_manipulation {
     static boolean set_bit_check(int n,int posn) {  // posn will be 0 index
         int i , j , mask ;
         mask = 1<<posn ;
-        
         if((mask&n) !=0) {
             return true ;
         }

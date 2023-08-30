@@ -22,6 +22,7 @@ public class bit_manipulation {
             mask = 1<<posn ;
             return mask|n ;
         }
+        // return (set_bit_check(n, posn)) ? ((1<<posn)^Integer.MAX_VALUE)&(n) : (1<<posn)|n ;
     }
 
     public static void main(String[] args) {
