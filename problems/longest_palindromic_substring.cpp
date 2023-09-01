@@ -13,11 +13,14 @@ string longestPalin (string s) {
     string ans = s.substr(0,1) ;
     int rs[n][n] ;
     
-    for(i=0;i<n;i++) {
+    for(i=0;i<n;i++) {    // every single letter will be palindrome
         rs[i][i] = 1;
     }
+
+// every double letter string will be palindrome if s[i] = = s[i+1]
+// and we are doing below thing because for 2 letter string , his condn wont work  s[lind+1] == s[rind-1]
     
-    for(i=0;i<n-1;i++) {
+    for(i=0;i<n-1;i++) {   
         rs[i][i+1] = (s[i]==s[i+1])? 1:0 ;
         if(rs[i][i+1]==1 && ans.length()<2) {
             ans = s.substr(i,2) ;
