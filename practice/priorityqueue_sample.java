@@ -48,31 +48,31 @@ public class priorityqueue_sample {
         pq.add(new pair(1,2)) ;
         pq.add(new pair(3,4)) ;
 
-        System.out.println(pq.peek().first+" " + pq.peek().second);
+        // System.out.println(pq.peek().first+" " + pq.peek().second);
 
-        PriorityQueue <Integer> pq2 = new PriorityQueue<>() ;
-        pq2.add(1) ;
-        pq2.add(4) ;
-        pq2.poll() ;
+        // PriorityQueue <Integer> pq2 = new PriorityQueue<>() ;
+        // pq2.add(1) ;
+        // pq2.add(4) ;
+        // pq2.poll() ;
 
 
         // list of priority queue
 
-        List<PriorityQueue<Integer>> lp = new ArrayList<>() ;
+        // List<PriorityQueue<Integer>> lp = new ArrayList<>() ;
 
-        for(int i=1;i<=5;i++) {
-            lp.add(new PriorityQueue<>((a,b) -> b - a)) ;
-        }
+        // for(int i=1;i<=5;i++) {
+        //     lp.add(new PriorityQueue<>((a,b) -> b - a)) ;
+        // }
 
-        lp.get(0).add(3);
-        lp.get(0).add(5) ;
-        lp.get(0).add(1) ;
-        lp.get(0).add(7) ;
-        lp.get(0).add(9) ;
+        // lp.get(0).add(3);
+        // lp.get(0).add(5) ;
+        // lp.get(0).add(1) ;
+        // lp.get(0).add(7) ;
+        // lp.get(0).add(9) ;
 
-        for(Integer jj:lp.get(0)) {
-            System.out.println(jj);
-        }
+        // for(Integer jj:lp.get(0)) {
+        //     System.out.println(jj);
+        // }
     }
 
 }

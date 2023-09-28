@@ -86,6 +86,8 @@ public class trie {
         return true;
     }
 
+    // count unique substring problem;'s solution is available in problems foldder with name count_unique_substrings'
+
     public static void main(String[] args) {
         String[] words = {"there" ,"their" ,"them" ,"manali" ,"ganza","thatsit"} ;
 
