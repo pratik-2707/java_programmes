@@ -121,7 +121,7 @@ public class heap_array_implementation {
     static void heapsort() {
         build_heap();
         ArrayList <Integer> temp = new ArrayList<>() ;
-        while(maxheap.size()>0) {
+        while(maxheap.size()>0) { 
             printmaxheap();
             temp.add(maxheap.get(0)) ;
             swap(0,maxheap.size()-1,0) ;
@@ -174,16 +174,29 @@ public class heap_array_implementation {
         // addelement_minheap(3);
         // addelement_minheap(8);
 
-        maxheap.add(1) ;
-        maxheap.add(2) ;
-        maxheap.add(3) ;
-        maxheap.add(4) ;
-        maxheap.add(5) ;
-        maxheap.add(6) ;
-        maxheap.add(7) ;
-        maxheap.add(8) ;
+        // maxheap.add(1) ;
+        // maxheap.add(2) ;
+        // maxheap.add(3) ;
+        // maxheap.add(4) ;
+        // maxheap.add(5) ;
+        // maxheap.add(6) ;
+        // maxheap.add(7) ;
+        // maxheap.add(8) ;
 
+        // heapsort();
+        // printmaxheap();
+
+        addelement_maxheap(40) ;
+        addelement_maxheap(80);
+        addelement_maxheap(60);
+        addelement_maxheap(4);
+        addelement_maxheap(67);
+        addelement_maxheap(8);
+        addelement_maxheap(99);
+        addelement_maxheap(3);
+        addelement_maxheap(45);
         heapsort();
-        printmaxheap();
+
+        
     }
 }

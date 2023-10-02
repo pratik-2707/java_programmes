@@ -1,5 +1,8 @@
 import java.util.* ;
 
+// count unique substring problem;'s solution is available in problems foldder with name count_unique_substrings'
+// longest_word_with_all_prefixes also present
+
 public class trie {
 
     static class Node{
@@ -87,6 +90,7 @@ public class trie {
     }
 
     // count unique substring problem;'s solution is available in problems foldder with name count_unique_substrings'
+    // longest_word_with_all_prefixes also present
 
     public static void main(String[] args) {
         String[] words = {"there" ,"their" ,"them" ,"manali" ,"ganza","thatsit"} ;
