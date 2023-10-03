@@ -18,7 +18,6 @@ public class array_inversion_count {
             ct += merge(a,l1,r1,l2,r2) ;
 
             return ct ;
-
         }
     }
 
@@ -27,7 +26,7 @@ public class array_inversion_count {
         int[] temp = new int[r2-l1+1] ;
         int i=l1 , j=l2 , k=0;
         while (i<=r1 && j<=r2) {
-            if(a[i]<a[j]) {
+            if(a[i]<=a[j]) {
                 temp[k] = a[i] ;
                 k++ ;
                 i++;
@@ -54,7 +53,6 @@ public class array_inversion_count {
             a[it] = temp[k2] ;
             it++;
         }
-
         return ct ;
     }
 
