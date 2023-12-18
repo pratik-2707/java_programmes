@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 vector<int> factor(int n) {
 	vector<int> ret;
 	for (int i = 2; i * i <= n; i++) {
@@ -15,7 +14,7 @@ vector<int> factor(int n) {
 }
 
 int main() {
-    int n = 16 ;
+    int n = 10 ;
 
     vector <int> v ;
     v = factor(n) ;

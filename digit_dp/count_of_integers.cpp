@@ -1,3 +1,4 @@
+#include <string>
 class Solution {
 int mod = 1e9 + 7;
 int rs[23][2][405];
