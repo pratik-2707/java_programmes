@@ -29,10 +29,11 @@ public class segment_tree {
 
     public static void main(String[] args) {
         int i ,j ;
-        for(i=0;i<10;i++) {
-            a[i] = i;
+        int n = 10;
+        for(i=0;i<n;i++) {
+            a[i] = i+1;
         } 
-        build(0,0,9) ;
-        System.out.println(query(0,0,9,0,9));
+        build(0,0,n-1) ;
+        System.out.println(query(0,0,n,0,n));
     }
 }
