@@ -5,7 +5,9 @@ using namespace std ;
 
 // https://www.youtube.com/watch?v=UflHuQj6MVA&list=LL&index=1
 
-// this solution will work in every test case , tested in gfg
+// this solution will work if string length is in range(1,10^3) becaus ehere we are using 2d array of size n*n,
+// there is more optimal way which is using manacher algorithm 
+// https://usaco.guide/adv/string-search?lang=cpp#manacher
  
 string longestPalin (string s) {
     int n = s.length() , i , j  ;
