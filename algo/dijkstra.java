@@ -42,9 +42,9 @@ public class dijkstra {
         dist[s] = 0; 
         PriorityQueue<node> pq = new PriorityQueue<node>(N,new node());
         pq.add(new node(s, 0));
-
         while(pq.size()>0) {
             node curr = pq.poll() ;
+            if(dist[curr.getV()]<curr.getWt()) {continue;}  // optimization needed to avoid tle
 
             for(node it : g.get(curr.getV())) {
                 if(dist[curr.getV()]+it.getWt()<dist[it.getV()]) {
