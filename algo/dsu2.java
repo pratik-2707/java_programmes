@@ -3,6 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+// some other problem link : https://cses.fi/problemset/result/12852398/
 class UnionFind {
     int[] parent;
     int[] rank;

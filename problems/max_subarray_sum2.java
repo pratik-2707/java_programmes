@@ -7,11 +7,8 @@ public class max_subarray_sum2 {
         int curr_max = a[1] ;
         
         for(int i=2;i<a.length;i++) {
-            curr_sum += a[i] ;
-            curr_sum = Math.max(curr_sum,a[i]) ;
-            if(curr_sum>curr_max) {
-                curr_max = curr_sum ;
-            }
+            curr_sum = Math.max(curr_sum+a[i],a[i]) ;
+            curr_max = Math.max(curr_max,curr_sum) ;
         }
         return curr_max ;
     }
@@ -29,3 +26,4 @@ public class max_subarray_sum2 {
         }
     }
 }
+
