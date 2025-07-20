@@ -3,7 +3,7 @@ public class binary_exponentiation {
 
     static long mod = (long)1e9+7 ;
 
-    static int func(int a , int b) {
+    static int func(int a , int b) { // iteraive
         int ans = 1;
         while(b>0) {
             if((b&1)!=0) {
@@ -15,7 +15,7 @@ public class binary_exponentiation {
         return ans ;
     }
 
-    static long func2(long a, long b) {
+    static long func2(long a, long b) {  // recursion
         if(b==0) {
             return 1;
         }
